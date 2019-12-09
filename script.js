@@ -13,10 +13,10 @@ while (length < 8 || length > 128 || isNaN(length)) {
   };
 };
 while (special != true && numeric != true && lower != true && upper != true) {
-  var special = confirm("Would you like special characters? i.e. ! # $");
-  var numeric = confirm("Would you like numeric characters? i.e. 1 2 3");
-  var lower = confirm("Would you like to use lower case characters?");
-  var upper = confirm("Would you like to use upper case characters?");
+  var special = confirm("Would you like special characters?  i.e. ! # $ \n(Press OK for yes and Cancel for no)");
+  var numeric = confirm("Would you like numeric characters?  i.e. 1 2 3\n(Press OK for yes and Cancel for no)");
+  var lower = confirm("Would you like to use lower case characters?  i.e. a b c\n(Press OK for yes and Cancel for no)");
+  var upper = confirm("Would you like to use upper case characters?  i.e. A B C\n(Press OK for yes and Cancel for no)");
 
   var passwordOptions = [];
 
