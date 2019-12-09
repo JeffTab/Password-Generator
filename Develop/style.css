@@ -1,0 +1,36 @@
+
+body{
+    font-family: 'Gupter', serif;
+    letter-spacing: 1px;
+}
+
+.container{
+    background: rgb(245, 250, 255);
+    
+}
+
+@media (min-width: 1200px){
+.container{
+    max-width: 850px;
+}
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 850px;
+    }
+}
+
+h1{
+    text-align: center;
+    padding: 25px;
+    padding-top: 15px;
+}
+
+/* .card-header{
+    
+} */
+
+.card-body{
+    text-align: center;
+}
