@@ -31,6 +31,21 @@ h1{
     padding-top: 15px;
 }
 
+#reset{
+    color: white;
+    border-radius: 50px;
+    background-color: red;
+    line-height: 1.3;
+    padding: 2px 7px 2px 7px;
+    position:absolute;
+    top: 15px;
+    right: 0;
+}
+
+header{
+    position: relative;
+}
+
 .card-header{
     font-family: 'Gupter', serif;
     letter-spacing: 1px;  
@@ -56,6 +71,9 @@ textarea{
     font-weight: 700;
 }
 
+
+@media (min-width: 768px){
+
 .card-footer{
     background: white;
     margin: 0 auto;
@@ -74,6 +92,30 @@ textarea{
     font-size: 1.25rem;
     min-width: 200px;
 }
+}
+
+@media (max-width:768px){
+    .card-footer{
+        background: white;
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .btn{
+        color:white;
+        border-radius: 20px;
+        padding: 10px 20px 10px 20px;
+        font-family: 'Cabin', sans-serif;
+        letter-spacing: 1px;
+        font-size: 1.25rem;
+        width: 100%;
+    }
+    #generate{
+        margin-bottom: 12px;
+    }
+
+}
+
 
 #generate{
     background: rgb(187, 39, 39);

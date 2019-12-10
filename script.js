@@ -1,5 +1,7 @@
 // Assignment Code
 
+
+
 alert("Hello! This is a password generator.  I just need you to answer a few questions about the type of password.");
 
 
@@ -41,20 +43,30 @@ while (special != true && numeric != true && lower != true && upper != true) {
   }
 
 }
-var buildPassword = [];
 
-for (var i = 0; i < length; i++) {
+function generatePassword() {
 
-  var currentOption = passwordOptions[Math.floor(Math.random() * passwordOptions.length)];
-  buildPassword = buildPassword.concat(currentOption);
+  var buildPassword = [];
+
+  for (var i = 0; i < length; i++) {
+
+    var currentOption = passwordOptions[Math.floor(Math.random() * passwordOptions.length)];
+    buildPassword = buildPassword.concat(currentOption);
+
+
+  }
+
+  var password = buildPassword.join("");
+
+  document.getElementById("password").value = password;
+
+  // document.getElementById("generate").addEventListener("click", function () {
+  //   document.getElementById("password").innerHTML = password;
+  // });
 
 }
 
-var password = buildPassword.join("");
 
-document.getElementById("generate").addEventListener("click", function () {
-  document.getElementById("password").innerHTML = password;
-});
 
 function copyFunction() {
   var copyText = document.getElementById("password");
